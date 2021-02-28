@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var surname, name, otch, age, pol, a, b, mPens, wPens;
+        surname=prompt ("Введите вашу фамилию");
+        name=prompt ("Введите ваше имя");
+        otch=prompt ("Введите ваше отчество");
+        age=prompt ("Введите ваш возраст");
+        pol=confirm ("Ваш пол - мужской?");
+        a= ('Ваше ФИО:'+surname+ name+ otch);
+        b= ('Ваш возраст в годах:'+age);
+        c= ('Ваш возраст в днях:'+ (age*360));
+        d= ('Через 5 лет вам будет:'+(parseInt(age)+5));
+
+/*         if (pol==true) {
+            alert ('Ваш пол мужской');
+        }
+        else
+            alert ('Ваш пол женский');
+
+ */        
+        if ((pol==true) && (age>=60)) {
+            mPens = (a + "\n\"" + b + "\n\"" + c + "\n\"" + d + "\n\"" + 'Ваш пол мужской' + "\n\"" + 'Вы на пенсии: да');
+       }
+        else
+            mPens = (a + "\n\"" + b + "\n\"" + c + "\n\"" + d + "\n\"" + 'Ваш пол мужской' + "\n\"" + 'Вы на пенсии: нет' );
+
+
+        
+        if ((pol==false) && (age>=55)) {
+            wPens = (a + "\n\"" + b + "\n\"" + c + "\n\"" + d + "\n\"" + 'Ваш пол женский' + "\n\"" + 'Вы на пенсии: да');
+       }
+        else
+            wPens = (a + "\n\"" + b + "\n\"" + c + "\n\"" + d + "\n\"" + 'Ваш пол женский' + "\n\"" + 'Вы на пенсии: нет' );
+
+
+
+        if (pol==true) {
+            alert (mPens);
+        }
+        else
+            alert (wPens);
+
+
+
+
+
+            /*         if ((pol==false) && (age>55)) {
+            alert ('Вы пенсионерка')
+        }
+        else
+            alert ('Вы не пенсионерка')
+ */
+
+
+           
+        
+    </script>
+</body>
+</html>

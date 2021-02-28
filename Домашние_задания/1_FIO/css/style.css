@@ -1,0 +1,22 @@
+header {
+    width: 350px;
+    margin: 0 auto;
+    border: solid 3px rgb(6, 79, 80);
+}
+
+h1 {
+    font-size: 25px;
+    color: rgb(2, 44, 44);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+span {
+    font-size: 18px;
+    color: red;
+}
