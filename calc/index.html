@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&display=swap" rel="stylesheet"></head>
+
+<body>
+    <div class="container">
+        <div class="calc__inner">
+            <div class="calc__input-box">
+                <input class="calc__input" id="inputs" type="text" placeholder="0"></input><br>
+            </div>
+            <div class="calc__btn-block">
+                <section class="calc__btn-number">
+                    <button class="calc__btn-number--item calc__btn-number--style--C" onclick="clearInput()">C</button>
+                    <button class="calc__btn-number--item" onclick="root()">&#8730;</button>
+                    <button class="calc__btn-number--item" onclick="procent()">%</button>
+                
+<!--                     <button class="calc__btn-number--item" onclick="document.getElementById('inputs').value+='%'">%</button>
+ -->
+                    <button class="calc__btn-number--item" onclick="document.getElementById('inputs').value+=1">1</button>
+                    <button class="calc__btn-number--item" onclick="document.getElementById('inputs').value+=2">2</button>
+                    <button class="calc__btn-number--item" onclick="document.getElementById('inputs').value+=3">3</button>
+                    <button class="calc__btn-number--item" onclick="document.getElementById('inputs').value+=4">4</button>
+                    <button class="calc__btn-number--item" onclick="document.getElementById('inputs').value+=5">5</button>
+                    <button class="calc__btn-number--item" onclick="document.getElementById('inputs').value+=6">6</button>
+                    <button class="calc__btn-number--item" onclick="document.getElementById('inputs').value+=7">7</button>
+                    <button class="calc__btn-number--item" onclick="document.getElementById('inputs').value+=8">8</button>
+                    <button class="calc__btn-number--item" onclick="document.getElementById('inputs').value+=9">9</button>
+                    <button class="calc__btn-number--item" onclick="document.getElementById('inputs').value+=0">0</button>
+                    <button class="calc__btn-number--item" onclick="document.getElementById('inputs').value+='.'">.</button>
+
+                    <button class="calc__btn-number--item calc__btn-number--style--result" onclick="result()">=</button>
+                </section>
+
+                <section class="calc__btn-operation">
+                    <button class="calc__btn-operation--item" onclick="document.getElementById('inputs').value+='+'">+</button>
+                    <button class="calc__btn-operation--item" onclick="document.getElementById('inputs').value+='-'">-</button>
+                    <button class="calc__btn-operation--item" onclick="document.getElementById('inputs').value+='*'">x</button>
+                    <button class="calc__btn-operation--item" onclick="document.getElementById('inputs').value+='/'">/</button>
+                    <button class="calc__btn-operation--item calc__btn-number--style--result" onclick="copir()">&#10697;</button>
+
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
